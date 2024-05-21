@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a_english=100;
+        let b_hindi=105;
+        let c_cprogram=99;
+        let d_dsa=115;
+        let e_java=138;
+        let min;
+        let max;
+
+        if(a_english > b_hindi && a_english>c_cprogram && a_english>d_dsa &&a_english>e_java)
+        {
+            console.log("English Is max "+a_english);
+            max=a_english;
+        }
+        else if(b_hindi>c_cprogram &&  b_hindi>d_dsa && b_hindi>e_java)
+        {
+            console.log("Hindi is max "+b_hindi);
+            max=b_hindi;
+        }
+        else if(c_cprogram>d_dsa && c_cprogram>e_java)
+        {
+            console.log("C program is max "+c_cprogram);
+            max=c_cprogram;
+        }
+        else if(d_dsa>e_java)
+        {
+            console.log("DSA is max "+d_dsa);
+            max=d_dsa;
+        }
+        else{
+            console.log("Java is max "+e_java);
+            max=e_java;
+        }
+
+
+        if(a_english < b_hindi && a_english<c_cprogram && a_english<d_dsa &&a_english<e_java)
+        {
+            console.log("English Is Min "+a_english);
+            min=a_english;
+        }
+        else if(b_hindi<c_cprogram &&  b_hindi<d_dsa && b_hindi<e_java)
+        {
+            console.log("Hindi is Min "+b_hindi);
+            min=b_hindi;
+        }
+        else if(c_cprogram<d_dsa && c_cprogram<e_java)
+        {
+            console.log("C program is Min "+c_cprogram);
+            min=c_cprogram;
+        }
+        else if(d_dsa<e_java)
+        {
+            console.log("DSA is Min "+d_dsa);
+            min=d_dsa;
+        }
+        else{
+            console.log("Java is Min "+e_java);
+            min=e_java;
+        }
+
+        console.log("English  Hindi  Cprogram  DSA JAVA  MIN  MAX");
+        console.log(a_english,"  "+ b_hindi, "  "+c_cprogram,"  "+ d_dsa, "  "+ e_java,min,max);
+    </script>
+</body>
+</html>

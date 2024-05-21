@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+        b=[]
+        b.
+        
+       let a = b.map(function(el){
+        let total =el.English + el.Maths + el.Physics + el.Science;
+        
+        let per = total/4;
+        return {name:el.name,lname:el.lname,Maths:el.Maths,English:el.English,Science:el.Science,Physics:el.Physics,Total:total,pers:per}
+       })
+
+     let data=0;
+
+       a.forEach(function(el){
+            let grade;
+                if(el.Total>90)
+                {
+                    grade="A+ PASS";
+                }
+                else if(el.Total>80)
+                {
+                    grade="A PASS";
+                }
+                else if(el.Total>70)
+                {
+                    grade="B+ PASS"
+                }
+                else  if(el.Total>60)
+                {
+                    grade="B PASS"
+                }
+                else if(el.Total>50)
+                {
+                    grade="C FAILD"
+                }
+       data= ("My name is "+ el.name +" "+el.lname+". I got "+ el.Total + " total marks with "+ el.pers+" and "+ grade)
+       el.Result=data;
+        })
+       
+        // console.log(a);
+
+        let arr=[];
+        
+        arr=a.map(function(el){
+            return el.Result;
+        })
+        console.log(arr);
+    </script>   
+</body>
+</html>

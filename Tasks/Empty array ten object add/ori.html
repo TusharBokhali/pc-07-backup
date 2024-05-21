@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    
+        b=[
+            {name:"Gautam",lname:"Variya",Maths:90,English:86,Science:85,Physics:86},
+            {name:"Kaushik",lname:"Variya",Maths:85,English:87,Science:84,Physics:87},
+            {name:"Bhargav",lname:"Janjotar",Maths:70,English:88,Science:83,Physics:88},
+            {name:"Tushar",lname:"Prajapati",Maths:60,English:89,Science:82,Physics:89},
+            {name:"Dhaval",lname:"Variya",Maths:90,English:90,Science:81,Physics:90},
+            {name:"Satish",lname:"Variya",Maths:95,English:91,Science:80,Physics:89},
+            {name:"Piyush",lname:"Panadav",Maths:96,English:92,Science:81,Physics:87},
+            {name:"jaydip",lname:"Tank",Maths:97,English:93,Science:82,Physics:87},
+            {name:"rahul",lname:"Pansuriya",Maths:98,English:94,Science:83,Physics:86},
+            {name:"Sagar",lname:"devganiya",Maths:99,English:95,Science:84,Physics:85}
+        ]
+        
+       let a = b.map(function(el){
+        let total =el.English + el.Maths + el.Physics + el.Science;
+        
+        let per = total/4;
+        return {name:el.name,lname:el.lname,Maths:el.Maths,English:el.English,Science:el.Science,Physics:el.Physics,Total:total,pers:per}
+       })
+
+     let data=0;
+
+       a.forEach(function(el){
+            let grade;
+                if(el.Total>90)
+                {
+                    grade="A+ PASS";
+                }
+                else if(el.Total>80)
+                {
+                    grade="A PASS";
+                }
+                else if(el.Total>70)
+                {
+                    grade="B+ PASS"
+                }
+                else  if(el.Total>60)
+                {
+                    grade="B PASS"
+                }
+                else if(el.Total>50)
+                {
+                    grade="C FAILD"
+                }
+       console.log("My name is "+ el.name +" "+el.lname+". I got "+ el.Total + " total marks with "+ el.pers+" and "+ grade)
+        })
+       
+        console.log(a);
+    </script>   
+</body>
+</html>

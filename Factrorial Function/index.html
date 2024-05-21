@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function factro(j)
+        {
+            let a=prompt("Find Factrorial Number");
+            let f=a;
+            let fact=1;
+            while(a>=1)
+            {
+                fact=fact*a;
+                a--;                
+            }
+            console.log(j+  ".     " +f+"=>Factorial=>"+fact);
+            document.write(j+ ".     " +f+ ".=>Factorial=>"+fact+"<br>");
+            f=0;
+         }
+
+        let i;
+        let a=prompt("Total Factrorial Number Find:");
+        for(i=1;i<=a;i++)
+        {
+            factro(i);
+        }
+    </script>
+</body>
+</html>

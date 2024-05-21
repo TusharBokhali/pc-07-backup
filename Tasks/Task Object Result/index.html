@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function obj(a, b, c) {
+
+            let sum = 0;
+            sum = a + b + c;
+
+            let per = parseInt(sum / 3);
+
+            let grade;
+
+            if (per > 90) {
+                grade = "A+";
+            }
+            else if (per > 50) {
+                grade = "B+"
+            }
+            else if (per > 30) {
+                grade = "C FAIL"
+            }
+
+            let rank = parseInt( sum / 300 * 100);
+
+            let object = {
+                CPP: a,
+                HTML: b,
+                JS: c,
+                Total: sum,
+                persentage: per,
+                grades: grade,
+                Ranks: rank,
+            }
+            return object;
+        }
+        
+        let a = parseInt(prompt("ENTER THE CPP MARKS:"));
+        let b = parseInt(prompt("ENTER THE HTML MARKS:"));
+        let c = parseInt(prompt("ENTER THE JS MARKS:"));
+        let result = obj(a, b, c);
+        console.log(result);
+    </script>
+</body>
+
+</html>

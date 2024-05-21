@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+     
+
+          
+        function Calcluater(a,b,c)
+        {
+            
+            let sum;
+            let minus;        
+            let multi;        
+            let division;   
+            
+            console.log("Number : "+a)
+            console.log("Number : "+b)
+            console.log("Sing: "+c)
+
+            switch(c)
+            {
+                
+                case '+':
+                    {
+                        sum= parseInt(a)+parseInt(b);
+                        console.log("sum=>"+sum);
+                        break;
+                    }
+                    
+                    case '-':
+                        {
+                            minus=a-b;
+                            console.log("minus=>"+minus);
+                            break;
+            }
+            
+            case '*':
+                {
+                multi=a*b;
+                console.log("multi=>"+multi);
+                break;
+            }
+            
+            case '/':
+                {
+                    division=a/b;
+                    console.log("division=>"+division);
+                    break;
+                }
+            }
+        }
+           let a= parseInt( prompt("Enter The Number A=>"));
+        let b= parseInt( prompt("Enter The Number B=>"));
+        let c= prompt("Enter The Arthamatic Operations");
+        Calcluater(a,b,c)
+        </script>
+</body>
+</html>

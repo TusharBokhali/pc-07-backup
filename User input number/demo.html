@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // function tushar(c)
+        // {
+        //     for(i=c;i<=10;i++)
+        //     {
+        //         console.log(i);
+        //     }
+        // }
+
+        // function name(names)
+        // {
+        //     console.log("hello my name is " + names +" in my name.");
+        //     document.write("hello my name is "  + names +" in my name.");
+        // }
+        // let a=prompt("Enter your name");
+        // name(a);
+        
+        // name("gautam");
+        // name("dhaval");
+        // name("good");
+        // name("varun");
+
+        function spy(e)
+        {
+            let a=10;
+        let i;
+        let sum;
+        let multi;
+        let rem;
+        let n;
+        for(i=10;i<=e;i++)
+        {
+            sum=0;
+            multi=1;
+            rem=0;
+            n=i;
+            while(n!=0)
+            {
+                rem=n%10;
+                sum=sum+rem;
+                multi=multi*rem;
+                n=parseInt( n/10);
+            }
+           
+            if(sum == multi)
+            {
+                console.log("spy number is="+i);
+                document.write("spy number is="+i+"<br>");
+            }
+        }
+        }
+        function arm(e)
+        {
+            let a=10;
+        let i;
+        let sum;
+        let multi;
+        let rem;
+        let n;
+        for(i=10;i<=e;i++)
+        {
+            sum=0;
+            multi=1;
+            rem=0;
+            n=i;
+            while(n!=0)
+            {
+                rem=n%10;
+                sum=sum+rem*rem*rem;
+                n=parseInt( n/10);
+            }
+           
+            if(sum==i)
+            {
+                console.log("ARMSTRONG number is="+i);
+                document.write("ARMSTRONG number is="+i+"<br>");
+            }
+        }
+    }
+
+        let fun=prompt("Find Type of number ex:spy Or ARM");
+        let e=prompt("Enter The number");
+        
+        switch(fun)
+        {
+            case "spy":{
+                spy(e);
+                break;
+            }
+            case "arm":{
+                arm(e);
+                break;
+            }
+            default:{
+                let k=1;
+                console.log("Not found!!!!!");
+            }
+        }
+    </script>
+</body>
+</html>

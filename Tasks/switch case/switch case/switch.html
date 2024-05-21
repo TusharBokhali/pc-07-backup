@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let a=prompt("Enter The Number A=>");
+        let b=prompt("Enter The Number A=>");
+        let c=prompt("Enter The Arthamatic Operations");
+        
+
+        let sum;
+        let minus;        
+        let multi;        
+        let division;        
+
+        switch(c)
+        {
+            case '+':
+            {
+                sum= parseInt(a)+parseInt(b);
+                console.log("sum=>"+sum);
+                break;
+            }
+
+            case '-':
+            {
+                minus=a-b;
+                console.log("minus=>"+minus);
+                break;
+            }
+
+            case '*':
+            {
+                multi=a*b;
+                console.log("multi=>"+multi);
+                break;
+            }
+
+            case '/':
+            {
+                division=a/b;
+                console.log("division=>"+division);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

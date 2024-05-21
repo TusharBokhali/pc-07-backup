@@ -1,0 +1,19 @@
+  if(a_english < b_hindi && a_english<c_cprogram && a_english<d_dsa &&a_english<e_java)
+        {
+            console.log("A Is Min");
+        }
+        else if(b_hindi<c_cprogram &&  b_hindi<d_dsa && b_hindi<e_java)
+        {
+            console.log("b is Min");
+        }
+        else if(c_cprogram<d_dsa && c_cprogram<e_java)
+        {
+            console.log("c is Min");
+        }
+        else if(d_dsa<e_java)
+        {
+            console.log("d is Min");
+        }
+        else{
+            console.log("e is Min");
+        }
